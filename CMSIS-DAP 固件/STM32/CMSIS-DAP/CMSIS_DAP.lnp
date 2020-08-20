@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+".\cmsis-dap\startup_stm32f10x_md.o"
+".\cmsis-dap\system_stm32f10x.o"
+".\cmsis-dap\cmsis-dap.o"
+".\cmsis-dap\userapp.o"
+".\cmsis-dap\usb_config.o"
+".\cmsis-dap\usbd_stm32f103.o"
+".\cmsis-dap\usbd_user_cdc_acm.o"
+".\cmsis-dap\usbd_user_hid.o"
+".\USB_CM3.lib"
+".\cmsis-dap\stm32f10x_gpio.o"
+".\cmsis-dap\stm32f10x_rcc.o"
+".\cmsis-dap\stm32f10x_usart.o"
+".\cmsis-dap\stm32f10x_flash.o"
+".\cmsis-dap\misc.o"
+--library_type=microlib --strict --scatter ".\CMSIS_DAP-C8.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\CMSIS-DAP\CMSIS_DAP.map" -o .\CMSIS-DAP\CMSIS_DAP.axf
