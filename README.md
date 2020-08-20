@@ -1,5 +1,5 @@
 # CMSIS-DAP-Mini
-​	本项目是一个超迷你的CMSIS-DAP下载器，具有SW接口，一路虚拟敞口，最大支持10MHZ的下载速度。
+​	本项目是一个超迷你的CMSIS-DAP下载器，具有SW接口，一路虚拟串口，最大支持10MHZ的下载速度。
 
 ![Top](./img/top.jpg)
 
