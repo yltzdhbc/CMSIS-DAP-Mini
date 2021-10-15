@@ -117,7 +117,7 @@
 //   </h>
 #define USBD_STRDESC_LANGID         0x0409
 #define USBD_STRDESC_MAN            L"yuleitao"
-#define USBD_STRDESC_PROD           L"CMSIS-DAP_BY_YLT"
+#define USBD_STRDESC_PROD           L"CMSIS-DAP-Micro"
 #define USBD_STRDESC_SER_ENABLE     1
 #define USBD_STRDESC_SER            L"0001A0000000"
 
@@ -169,7 +169,7 @@
 #define USBD_HID_HS_ENABLE          0
 #define USBD_HID_HS_WMAXPACKETSIZE  4
 #define USBD_HID_HS_BINTERVAL       6
-#define USBD_HID_STRDESC            L"CMSIS-DAP_JX"
+#define USBD_HID_STRDESC            L"CMSIS-DAP-Micro"
 #define USBD_HID_INREPORT_NUM       1
 #define USBD_HID_OUTREPORT_NUM      1
 #define USBD_HID_INREPORT_MAX_SZ    64

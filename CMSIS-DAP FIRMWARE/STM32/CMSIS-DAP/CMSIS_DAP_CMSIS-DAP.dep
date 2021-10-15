@@ -65,7 +65,7 @@ I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h)(0x583C622C)
 I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x583C622C)
 I (.\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x583C622C)
 I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x583C622C)
-I (usb_config.c)(0x5EA3D203)
+I (usb_config.c)(0x60474201)
 I (DAP_config.h)(0x5AFE809A)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
 I (..\DAP.h)(0x583C622C)
@@ -98,7 +98,7 @@ I (..\DAP.c)(0x583C622C)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
 I (..\SW_DP.c)(0x583C622C)
 I (..\JTAG_DP.c)(0x583C622C)
-F (.\usb_config.c)(0x5EA3D203)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\STM32F10x_StdPeriph_Driver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DBOARD_V1 -DSTM32F103Cx-o .\cmsis-dap\usb_config.o --omf_browse .\cmsis-dap\usb_config.crf --depend .\cmsis-dap\usb_config.d)
+F (.\usb_config.c)(0x60474201)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\STM32F10x_StdPeriph_Driver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DBOARD_V1 -DSTM32F103Cx-o .\cmsis-dap\usb_config.o --omf_browse .\cmsis-dap\usb_config.crf --depend .\cmsis-dap\usb_config.d)
 I (C:\Keil_v5\ARM\RV31\INC\usb_lib.c)(0x559CE078)
 I (C:\Keil_v5\ARM\RV31\INC\RTL.h)(0x559CE078)
 I (C:\Keil_v5\ARM\RV31\INC\rl_usb.h)(0x559CE078)
@@ -171,7 +171,7 @@ I (.\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x583C622C)
 I (DAP_config.h)(0x5AFE809A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
-I (usb_config.c)(0x5EA3D203)
+I (usb_config.c)(0x60474201)
 F (.\usbd_user_cdc_acm.c)(0x5B08D84E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I . -I .\STM32F10x_StdPeriph_Driver\inc-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\ST\STM32F10x-D__UVISION_VERSION="529" -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD -DBOARD_V1 -DSTM32F103Cx-o .\cmsis-dap\usbd_user_cdc_acm.o --omf_browse .\cmsis-dap\usbd_user_cdc_acm.crf --depend .\cmsis-dap\usbd_user_cdc_acm.d)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5D9AD218)
 I (C:\Keil_v5\ARM\RV31\INC\RTL.h)(0x559CE078)
@@ -198,7 +198,7 @@ I (C:\Keil_v5\ARM\RL\USB\INC\usbd_msc.h)(0x559CE078)
 I (C:\Keil_v5\ARM\RL\USB\INC\usbd_cls.h)(0x559CE078)
 I (C:\Keil_v5\ARM\RL\USB\INC\usbd_hw.h)(0x559CE078)
 I (C:\Keil_v5\ARM\RL\USB\INC\usbh.h)(0x559CE078)
-I (usb_config.c)(0x5EA3D203)
+I (usb_config.c)(0x60474201)
 I (DAP_Config.h)(0x5AFE809A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)
@@ -247,7 +247,7 @@ I (C:\Keil_v5\ARM\RL\USB\INC\usbd_msc.h)(0x559CE078)
 I (C:\Keil_v5\ARM\RL\USB\INC\usbd_cls.h)(0x559CE078)
 I (C:\Keil_v5\ARM\RL\USB\INC\usbd_hw.h)(0x559CE078)
 I (C:\Keil_v5\ARM\RL\USB\INC\usbh.h)(0x559CE078)
-I (usb_config.c)(0x5EA3D203)
+I (usb_config.c)(0x60474201)
 I (DAP_config.h)(0x5AFE809A)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5D9AD21A)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5D9AD218)

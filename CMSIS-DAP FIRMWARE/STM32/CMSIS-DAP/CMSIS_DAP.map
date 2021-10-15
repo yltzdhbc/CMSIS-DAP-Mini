@@ -988,8 +988,8 @@ Image Symbol Table
     i.usbd_os_evt_set                        0x08002e80   Section        0  usb_config.o(i.usbd_os_evt_set)
     i.usbd_reset_core                        0x08002e84   Section        0  usbd_core.o(i.usbd_reset_core)
     .constdata                               0x08002ea8   Section       52  cmsis-dap.o(.constdata)
-    .constdata                               0x08002edc   Section      486  usb_config.o(.constdata)
-    .constdata                               0x080030c2   Section       16  usbd_user_cdc_acm.o(.constdata)
+    .constdata                               0x08002edc   Section      490  usb_config.o(.constdata)
+    .constdata                               0x080030c6   Section       16  usbd_user_cdc_acm.o(.constdata)
     USERINIT                                 0x08004000   Section       12  userapp.o(USERINIT)
     i.DAP_Connect                            0x0800400c   Section        0  userapp.o(i.DAP_Connect)
     DAP_Connect                              0x0800400d   Thumb Code    66  userapp.o(i.DAP_Connect)
@@ -1425,13 +1425,13 @@ Image Symbol Table
     USBD_ConfigDescriptor_HS                 0x0800301a   Data           1  usb_config.o(.constdata)
     USBD_OtherSpeedConfigDescriptor          0x0800301b   Data           1  usb_config.o(.constdata)
     USBD_OtherSpeedConfigDescriptor_HS       0x0800301c   Data           1  usb_config.o(.constdata)
-    USBD_StringDescriptor                    0x0800301e   Data         164  usb_config.o(.constdata)
-    UART_RX_INIT                             0x080030c2   Data           4  usbd_user_cdc_acm.o(.constdata)
-    UART_TX_INIT                             0x080030c6   Data           4  usbd_user_cdc_acm.o(.constdata)
-    UART_RX_DEINIT                           0x080030ca   Data           4  usbd_user_cdc_acm.o(.constdata)
-    UART_TX_DEINIT                           0x080030ce   Data           4  usbd_user_cdc_acm.o(.constdata)
-    Region$$Table$$Base                      0x080030d4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003114   Number         0  anon$$obj.o(Region$$Table)
+    USBD_StringDescriptor                    0x0800301e   Data         168  usb_config.o(.constdata)
+    UART_RX_INIT                             0x080030c6   Data           4  usbd_user_cdc_acm.o(.constdata)
+    UART_TX_INIT                             0x080030ca   Data           4  usbd_user_cdc_acm.o(.constdata)
+    UART_RX_DEINIT                           0x080030ce   Data           4  usbd_user_cdc_acm.o(.constdata)
+    UART_TX_DEINIT                           0x080030d2   Data           4  usbd_user_cdc_acm.o(.constdata)
+    Region$$Table$$Base                      0x080030d8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003118   Number         0  anon$$obj.o(Region$$Table)
     UserAppDescriptor                        0x08004000   Data          12  userapp.o(USERINIT)
     DAP_ProcessCommand                       0x080047e5   Thumb Code   412  userapp.o(i.DAP_ProcessCommand)
     DAP_ProcessVendorCommand                 0x08004985   Thumb Code    10  userapp.o(i.DAP_ProcessVendorCommand)
@@ -1527,9 +1527,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003234, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003238, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003114, Max: 0x00004000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003118, Max: 0x00004000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1724,45 +1724,45 @@ Memory Map of the image
     0x08002e82   0x08002e82   0x00000002   PAD
     0x08002e84   0x08002e84   0x00000024   Code   RO         2020    i.usbd_reset_core   USB_CM3.lib(usbd_core.o)
     0x08002ea8   0x08002ea8   0x00000034   Data   RO          131    .constdata          cmsis-dap.o
-    0x08002edc   0x08002edc   0x000001e6   Data   RO          708    .constdata          usb_config.o
-    0x080030c2   0x080030c2   0x00000010   Data   RO         1059    .constdata          usbd_user_cdc_acm.o
-    0x080030d2   0x080030d2   0x00000002   PAD
-    0x080030d4   0x080030d4   0x00000040   Data   RO         2225    Region$$Table       anon$$obj.o
+    0x08002edc   0x08002edc   0x000001ea   Data   RO          708    .constdata          usb_config.o
+    0x080030c6   0x080030c6   0x00000010   Data   RO         1059    .constdata          usbd_user_cdc_acm.o
+    0x080030d6   0x080030d6   0x00000002   PAD
+    0x080030d8   0x080030d8   0x00000040   Data   RO         2225    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003114, Size: 0x00002484, Max: 0x00002800, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003118, Size: 0x00002484, Max: 0x00002800, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08003114   0x00000014   Data   RW           15    .data               system_stm32f10x.o
-    0x20000014   0x08003128   0x00000018   Data   RW          132    .data               cmsis-dap.o
-    0x2000002c   0x08003140   0x0000000b   Data   RW          709    .data               usb_config.o
-    0x20000037   0x0800314b   0x00000001   PAD
-    0x20000038   0x0800314c   0x00000006   Data   RW          886    .data               usbd_stm32f103.o
-    0x2000003e   0x08003152   0x00000002   PAD
-    0x20000040   0x08003154   0x00000013   Data   RW         1060    .data               usbd_user_cdc_acm.o
-    0x20000053   0x08003167   0x00000001   PAD
-    0x20000054   0x08003168   0x00000018   Data   RW         1221    .data               usbd_user_hid.o
-    0x2000006c   0x08003180   0x00000014   Data   RW         1421    .data               stm32f10x_rcc.o
-    0x20000080   0x08003194   0x00000028   Data   RW         2022    .data               USB_CM3.lib(usbd_core.o)
-    0x200000a8   0x080031bc   0x0000003f   Data   RW         2088    .data               USB_CM3.lib(usbd_cdc_acm.o)
-    0x200000e7   0x080031fb   0x00000001   PAD
-    0x200000e8   0x080031fc   0x00000030   Data   RW         2153    .data               USB_CM3.lib(usbd_hid.o)
+    0x20000000   0x08003118   0x00000014   Data   RW           15    .data               system_stm32f10x.o
+    0x20000014   0x0800312c   0x00000018   Data   RW          132    .data               cmsis-dap.o
+    0x2000002c   0x08003144   0x0000000b   Data   RW          709    .data               usb_config.o
+    0x20000037   0x0800314f   0x00000001   PAD
+    0x20000038   0x08003150   0x00000006   Data   RW          886    .data               usbd_stm32f103.o
+    0x2000003e   0x08003156   0x00000002   PAD
+    0x20000040   0x08003158   0x00000013   Data   RW         1060    .data               usbd_user_cdc_acm.o
+    0x20000053   0x0800316b   0x00000001   PAD
+    0x20000054   0x0800316c   0x00000018   Data   RW         1221    .data               usbd_user_hid.o
+    0x2000006c   0x08003184   0x00000014   Data   RW         1421    .data               stm32f10x_rcc.o
+    0x20000080   0x08003198   0x00000028   Data   RW         2022    .data               USB_CM3.lib(usbd_core.o)
+    0x200000a8   0x080031c0   0x0000003f   Data   RW         2088    .data               USB_CM3.lib(usbd_cdc_acm.o)
+    0x200000e7   0x080031ff   0x00000001   PAD
+    0x200000e8   0x08003200   0x00000030   Data   RW         2153    .data               USB_CM3.lib(usbd_hid.o)
     0x20000118        -       0x0000014c   Zero   RW          707    .bss                usb_config.o
     0x20000264        -       0x00000220   Zero   RW         1058    .bss                usbd_user_cdc_acm.o
     0x20000484        -       0x00002000   Zero   RW         1220    .bss                usbd_user_hid.o
 
 
-    Execution Region RW_USER (Exec base: 0x20002800, Load base: 0x0800322c, Size: 0x00000048, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_USER (Exec base: 0x20002800, Load base: 0x08003230, Size: 0x00000048, Max: 0x00002000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20002800   0x0800322c   0x00000005   Data   RW          421    .data               userapp.o
-    0x20002805   0x08003231   0x00000003   PAD
+    0x20002800   0x08003230   0x00000005   Data   RW          421    .data               userapp.o
+    0x20002805   0x08003235   0x00000003   PAD
     0x20002808        -       0x00000040   Zero   RW          419    .bss                userapp.o
 
 
-    Execution Region ARM_LIB_STACK (Exec base: 0x20004800, Load base: 0x08003114, Size: 0x00000800, Max: 0x00000800, ABSOLUTE)
+    Execution Region ARM_LIB_STACK (Exec base: 0x20004800, Load base: 0x08003118, Size: 0x00000800, Max: 0x00000800, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1840,21 +1840,21 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1200        188         52         24          0      41072   cmsis-dap.o
-        36          8        236          0          0        808   startup_stm32f10x_md.o
-       274         30          0          0          0       3486   stm32f10x_flash.o
-       422          6          0          0          0       2838   stm32f10x_gpio.o
-       244         26          0         20          0       3909   stm32f10x_rcc.o
-       452          6          0          0          0       6775   stm32f10x_usart.o
-       504         48          0         20          0     238457   system_stm32f10x.o
-        86          0        486         11        332      34014   usb_config.o
-      1370        134          0          6          0      35421   usbd_stm32f103.o
-       946        102         16         19        544      48146   usbd_user_cdc_acm.o
-       980        150          0         24       8192       5041   usbd_user_hid.o
-     12050        316         16          5         64      62667   userapp.o
+      1200        188         52         24          0      41320   cmsis-dap.o
+        36          8        236          0          0        816   startup_stm32f10x_md.o
+       274         30          0          0          0       3558   stm32f10x_flash.o
+       422          6          0          0          0       2870   stm32f10x_gpio.o
+       244         26          0         20          0       3953   stm32f10x_rcc.o
+       452          6          0          0          0       6883   stm32f10x_usart.o
+       504         48          0         20          0     238581   system_stm32f10x.o
+        86          0        490         11        332      34234   usb_config.o
+      1370        134          0          6          0      35685   usbd_stm32f103.o
+       946        102         16         19        544      48330   usbd_user_cdc_acm.o
+       980        150          0         24       8192       5113   usbd_user_hid.o
+     12050        316         16          5         64      63307   userapp.o
 
     ----------------------------------------------------------------------
-     18588       1014        872        136      11180     482634   Object Totals
+     18588       1014        876        136      11180     484650   Object Totals
          0          0         64          0       2048          0   (incl. Generated)
         24          0          2          7          0          0   (incl. Padding)
 
@@ -1900,15 +1900,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     23760       1670        872        288      11180     477030   Grand Totals
-     23760       1670        872        288      11180     477030   ELF Image Totals
-     23760       1670        872        288          0          0   ROM Totals
+     23760       1670        876        288      11180     479046   Grand Totals
+     23760       1670        876        288      11180     479046   ELF Image Totals
+     23760       1670        876        288          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                24632 (  24.05kB)
+    Total RO  Size (Code + RO Data)                24636 (  24.06kB)
     Total RW  Size (RW Data + ZI Data)             11468 (  11.20kB)
-    Total ROM Size (Code + RO Data + RW Data)      24920 (  24.34kB)
+    Total ROM Size (Code + RO Data + RW Data)      24924 (  24.34kB)
 
 ==============================================================================
 
